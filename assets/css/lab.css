@@ -40,3 +40,5 @@
 #publication-list.is-expanded{max-height: min(75vh, 900px);overflow-y:scroll;scrollbar-gutter:stable;scrollbar-width:auto;scrollbar-color:var(--gold-text) var(--wash);padding-right:16px;overscroll-behavior-y:contain}#publication-list.is-expanded::-webkit-scrollbar{width:12px}#publication-list.is-expanded::-webkit-scrollbar-track{background:var(--wash)}#publication-list.is-expanded::-webkit-scrollbar-thumb{background:var(--gold-text);border:3px solid var(--wash);border-radius:8px}
 
 .publication-thumbnail video{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:contain;background:var(--wash)}
+
+.member-research-focus{padding-left:22px;margin:0 0 12px;font-size:14px;line-height:1.5}.member-research-focus li{margin-bottom:4px}

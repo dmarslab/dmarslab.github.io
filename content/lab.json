@@ -822,7 +822,11 @@
       "name": "Sebastian Tilaguy-Lezama",
       "group": "PhD Students",
       "position": "Ph.D. Student · Electrical Engineering · 1st year",
-      "research_focus": "Aerial Cable Interaction",
+      "research_focus": [
+        "Cooperative Aerial Transportation",
+        "Multi-Robot Systems",
+        "Cable-Based Manipulation"
+      ],
       "image": "assets/img/sebastian.png",
       "education": [
         {
@@ -849,7 +853,11 @@
       "position": "Master’s Student",
       "image": "assets/img/zhengqi-sun.png",
       "image_alt": "Robot avatar for Zhengqi Sun",
-      "keywords": "Robotic Manipulation · Active Perception · Mechanical Search · Motion Planning · Autonomous Grasping"
+      "research_focus": [
+        "Robotic Manipulation",
+        "Active Perception",
+        "Mechanical Search"
+      ]
     },
     {
       "id": "zaid-ababneh",
@@ -858,7 +866,11 @@
       "position": "Master’s Student",
       "image": "assets/img/zaid-ababneh.png",
       "image_alt": "Robot avatar for Zaid Ababneh",
-      "keywords": "Aerial Robotics · Modular Robotics · Omnidirectional Flight · Dynamics and Control · Cooperative Aerial Systems"
+      "research_focus": [
+        "Aerial Robotics",
+        "Modular Robotic Systems",
+        "Dynamics and Control"
+      ]
     },
     {
       "id": "jared-nathan-ekstrom",
