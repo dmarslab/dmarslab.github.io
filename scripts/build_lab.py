@@ -72,6 +72,7 @@ for group in member_groups:
         education=''.join(f'<li><strong>{e(entry["degree"])} · {e(entry["year"])}</strong><span>Field: {e(entry["field"])}</span></li>' for entry in member.get('education',[]))
         details=(f'<p><strong>Research focus:</strong> {e(member["research_focus"])}</p>' if member.get('research_focus') else '')
         if education: details+=f'<h5 class="member-education-heading">Education</h5><ul class="member-education">{education}</ul>'
+        if member.get('keywords'): details+=f'<p class="member-keywords"><strong>Keywords:</strong> {e(member["keywords"])}</p>'
         if member.get('thesis'): details+=f'<p class="member-thesis"><strong>Thesis:</strong> {e(member["thesis"])}</p>'
         if member.get('award'): details+=f'<p class="member-award"><strong>Distinction:</strong> {e(member["award"])}</p>'
         layout='' if portrait else ' student-profile-text'
@@ -257,5 +258,6 @@ with Path('WEBSITE_BLUEPRINT.md').open('a') as document:
     for member in c.get('members',[]):
         document.write('### '+member['name']+'\n\n'+member['group']+' · '+member['position']+'\n\n')
         if member.get('research_focus'): document.write('Research focus: '+member['research_focus']+'\n\n')
+        if member.get('keywords'): details+=f'<p class="member-keywords"><strong>Keywords:</strong> {e(member["keywords"])}</p>'
         if member.get('thesis'): document.write('Thesis: '+member['thesis']+'\n\n')
         if member.get('award'): document.write('Distinction: '+member['award']+'\n\n')

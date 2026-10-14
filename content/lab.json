@@ -848,7 +848,8 @@
       "group": "Master’s Students",
       "position": "Master’s Student",
       "image": "assets/img/zhengqi-sun.png",
-      "image_alt": "Robot avatar for Zhengqi Sun"
+      "image_alt": "Robot avatar for Zhengqi Sun",
+      "keywords": "Robotic Manipulation · Active Perception · Mechanical Search · Motion Planning · Autonomous Grasping"
     },
     {
       "id": "zaid-ababneh",
@@ -856,7 +857,8 @@
       "group": "Master’s Students",
       "position": "Master’s Student",
       "image": "assets/img/zaid-ababneh.png",
-      "image_alt": "Robot avatar for Zaid Ababneh"
+      "image_alt": "Robot avatar for Zaid Ababneh",
+      "keywords": "Aerial Robotics · Modular Robotics · Omnidirectional Flight · Dynamics and Control · Cooperative Aerial Systems"
     },
     {
       "id": "jared-nathan-ekstrom",
