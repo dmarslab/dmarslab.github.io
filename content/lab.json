@@ -1,0 +1,853 @@
+{
+  "name": "ΔMARS Lab",
+  "headline": "Robots That Cooperate, Manipulate, and Interact.",
+  "intro": "At ΔMARS Lab, we investigate how robots collaborate and interact with the physical world. From autonomous cable manipulation and robotic knotting to cooperative aerial transportation and blimp systems, our research combines modeling, perception, planning, and control to develop new capabilities for autonomous robots.",
+  "overview": "ΔMARS Lab studies cooperative robotics, physical interaction, and autonomous manipulation. We investigate how individual robots and teams coordinate their actions, manipulate objects, and establish useful physical relationships with their environments. Our research connects dynamics, control, perception, and planning across aerial and ground platforms, including multirotor vehicles, autonomous blimps, and heterogeneous robotic teams.\n\nCable-based manipulation and robotic knotting form a distinctive focus within this broader agenda. Cables, ropes, and knots are not only objects to manipulate: they can become mechanisms for establishing connections, distributing forces, securing payloads, and creating mechanical constraints. We investigate autonomous cable routing, hitch and knot formation, interlacing, tension regulation, and friction-based grasping alongside broader questions of contact-rich interaction and cooperative autonomy.\n\nOur approach combines mathematical foundations, algorithms, and experimental systems. Models guide planning and feedback, while physical experiments reveal where assumptions need refinement. This cycle connects scientific understanding with robotic behavior and supports research beyond any single mechanism or platform. Directed by Dr. Diego S. D’Antonio, the laboratory is part of Oakland University’s Department of Electrical and Computer Engineering in Rochester, Michigan.",
+  "mission": "Advance cooperative robotics and autonomous manipulation through modeling, perception, planning, control, and experiments, with a distinctive focus on cables, knots, and contact-rich interactions.",
+  "vision": "Enable robots to cooperate and exploit physical interactions—including cables, ropes, and knots—to accomplish complex manipulation and transportation tasks across aerial and ground platforms.",
+  "principles": [
+    [
+      "Mathematical foundations",
+      "We build explicit models of geometry, dynamics, contact, and uncertainty. Assumptions and operating conditions remain visible so that analysis supports interpretable design decisions."
+    ],
+    [
+      "Integrated autonomy",
+      "Perception, planning, and control work together. Measurements inform task decisions, and planned actions account for the forces and constraints that controllers must manage."
+    ],
+    [
+      "Physical validation",
+      "We use robot experiments to examine where models hold and where they fail. Measured behavior, reproducible procedures, and honest reporting guide the next iteration."
+    ]
+  ],
+  "culture": "We value questions that can be tested, models that can be challenged, and experiments that others can understand. Students contribute through analysis, software, hardware, and scientific writing. Collaboration across disciplines and careful mentorship support learning; clear attribution, reproducible procedures, and honest reporting remain part of everyday research.",
+  "bio": "Dr. Diego S. D’Antonio is an Assistant Professor in the Department of Electrical and Computer Engineering at Oakland University, where he directs the ΔMARS Lab. He received his Ph.D. in Computer Science and Engineering from Lehigh University. His research focuses on autonomous and cooperative robotics, physical interaction, and robotic manipulation, with particular emphasis on aerial robotics, multi-robot systems, and cable-based manipulation. His work explores the integration of knot theory, contact mechanics, dynamics, planning, and control to enable autonomous grasping, object attachment, and cooperative transportation. His broader interests include contact-rich robotic interaction, autonomous blimps, and robotic systems for space applications. His research has received support from the Michigan Space Grant Consortium, and he is actively involved in student mentoring, robotics education, and STEM outreach.",
+  "research": [
+    {
+      "id": "cooperation",
+      "title": "Cooperative Robotics",
+      "full_title": "Cooperative Robotics and Multi-Agent Systems",
+      "short": "We study coordination, cooperative control, and collaborative manipulation using teams of autonomous robots across aerial, ground, and heterogeneous platforms.",
+      "detail": "Cooperative robotics asks how a team can achieve tasks beyond the capabilities of its individual members. We investigate coordination, cooperative control, collaborative manipulation, and the distribution of motion and physical forces. Shared objects and flexible connections can mechanically couple robots, while heterogeneous platforms introduce different capabilities and constraints. Research includes cooperative transportation, formation control, and distributed decision-making across aerial and ground systems. The challenge is to connect collective task objectives with feasible actions at each robot. This theme draws on models of interaction, perception, and planning, with cable-mediated cooperation as one distinctive area of investigation.",
+      "questions": [
+        "How can a robot team distribute forces while maintaining a desired object motion?",
+        "What information must robots exchange to coordinate through shared cables?",
+        "How should cooperation adapt when a contact changes or one robot reaches an actuation limit?"
+      ],
+      "applications": [
+        "Shared payload transportation",
+        "Cooperative object retrieval",
+        "Distributed handling of large or flexible structures"
+      ],
+      "visual": "Show synchronized trajectories and force arrows over a real transportation experiment; label each robot’s role.",
+      "connections": [
+        "Cable-Based Manipulation and Robotic Knotting",
+        "Physical Interaction",
+        "Dynamics and Control",
+        "Perception and Planning"
+      ]
+    },
+    {
+      "id": "cables",
+      "title": "Cable Manipulation and Robotic Knotting",
+      "full_title": "Cable-Based Manipulation and Robotic Knotting",
+      "short": "We investigate autonomous cable routing, hitch and knot formation, interlacing, and manipulation of flexible linear objects for grasping and securement.",
+      "detail": "Cables, ropes, and knots can act as mechanisms that enable robotic tasks. We investigate how robots route flexible linear objects, form hitches and knots, regulate tension, and exploit friction to establish attachments and secure payloads. The challenge is to connect the geometry of a cable arrangement with its mechanical behavior: a route must be achievable, and the resulting contact must support the intended task. Research includes cable interlacing, entanglement, grasp formation, and cooperative handling. This distinctive focus connects modeling, perception, planning, and control while contributing to the laboratory’s broader agenda in autonomous manipulation and physical interaction.",
+      "questions": [
+        "How can robots plan and execute cable routes that form useful hitches or knots?",
+        "How do tension, friction, and contact geometry determine whether a cable attachment supports a task?",
+        "How can a robot team form, inspect, and release cable-based connections autonomously?"
+      ],
+      "applications": [
+        "Aerial grasping",
+        "Object securement",
+        "Robotic assembly",
+        "Cooperative transportation",
+        "Flexible-object manipulation"
+      ],
+      "visual": "Pair an actual cable-interlacing experiment with a labeled knot or hitch diagram showing routing, contact regions, and tension. Distinguish knot geometry from measured attachment behavior.",
+      "connections": [
+        "Cooperative Robotics",
+        "Physical Interaction",
+        "Dynamics and Control",
+        "Perception and Planning"
+      ]
+    },
+    {
+      "id": "interaction",
+      "title": "Physical Interaction",
+      "full_title": "Physical Interaction and Contact-Rich Robotics",
+      "short": "We study how robots model, sense, and control contact with objects and environments to perform physically constrained manipulation tasks.",
+      "detail": "Physical interaction changes how a robot can move and what it can accomplish. We investigate contact between robots, objects, and environments, including attachment, pushing, grasping, and manipulation of rigid or flexible structures. Contact may establish a useful constraint, transmit a force, or introduce uncertainty through friction and slipping. Our research connects interaction sensing with models and feedback so robots can respond to changing conditions. The scientific challenge is to plan and regulate contact as part of the task, rather than consider motion alone. This theme spans aerial and ground platforms and connects cooperative action with autonomous manipulation.",
+      "questions": [
+        "How can robots establish and regulate useful contact while maintaining stable behavior?",
+        "Which measurements reveal contact geometry, slipping, and interaction forces?",
+        "How should manipulation plans adapt when contact constraints change?"
+      ],
+      "applications": [
+        "Contact-rich manipulation",
+        "Infrastructure interaction",
+        "Object handling and assembly",
+        "Manipulation in clutter"
+      ],
+      "visual": "Use an actual contact sequence and synchronized force or state measurements; add a schematic identifying the contact region and constraints.",
+      "connections": [
+        "Cooperative Robotics",
+        "Cable Manipulation and Robotic Knotting",
+        "Dynamics and Control",
+        "Perception and Planning"
+      ]
+    },
+    {
+      "id": "dynamics",
+      "title": "Dynamics and Control",
+      "full_title": "Dynamics, Modeling, and Control",
+      "short": "We develop models and feedback methods for robotic systems whose behavior changes with contact, friction, cable tension, and mechanical coupling.",
+      "detail": "Robotic systems change their behavior when contacts are established, released, or rearranged. We develop models and control methods for nonlinear dynamics, hybrid systems, contact mechanics, friction, and mechanical coupling across aerial and ground platforms. Cables and suspended loads provide important examples: tension, slack, and changing geometry connect robot motion to object behavior. The challenge is to retain the physical variables that matter while keeping models useful for estimation, planning, and feedback. Stability analysis and experimental validation guide our approach. This theme supplies foundations for cooperative robotics, knotting and cable manipulation, and broader contact-rich autonomous tasks.",
+      "questions": [
+        "Which interaction variables are necessary for a useful reduced-order model?",
+        "How can controllers account for transitions between slack, tension, sticking, and sliding?",
+        "What stability and feasibility conditions can guide manipulation under changing contacts?"
+      ],
+      "applications": [
+        "Suspended-load control",
+        "Flexible-object handling",
+        "Interaction-aware planning and feedback"
+      ],
+      "visual": "Use an annotated cable diagram linked to a tension-versus-time trace; visually distinguish measured data from schematic examples.",
+      "connections": [
+        "Cooperative Robotics",
+        "Cable Manipulation and Robotic Knotting",
+        "Physical Interaction",
+        "Perception and Planning"
+      ]
+    },
+    {
+      "id": "autonomy",
+      "title": "Perception and Planning",
+      "full_title": "Autonomous Perception and Planning",
+      "short": "We connect perception, estimation, and task planning so robots can decide when to observe, move, or manipulate their surroundings.",
+      "detail": "Autonomous physical interaction requires robots to decide what to measure and how to act when the environment is only partly known. We investigate state estimation, sensor fusion, active perception, manipulation planning, and task-level decision-making. Actions may change both an object’s position and the information available about it: moving an obstacle can reveal a target, while adjusting a cable can expose an interaction state. The challenge is to close the loop between observations, physically feasible plans, and feedback control. This theme supports aerial and cooperative tasks while leaving room for exploratory work in robotic search and object retrieval.",
+      "questions": [
+        "When should a robot observe again rather than execute its current plan?",
+        "How can pushing or rearranging objects reveal a hidden target?",
+        "How can planning use estimates of contact geometry and interaction uncertainty?"
+      ],
+      "applications": [
+        "Object search and retrieval",
+        "Manipulation in clutter",
+        "Adaptive inspection and physical intervention"
+      ],
+      "visual": "Use a labeled observe–plan–act sequence with camera views and estimated states; mark illustrative scenes as concepts.",
+      "connections": [
+        "Cooperative Robotics",
+        "Cable Manipulation and Robotic Knotting",
+        "Physical Interaction",
+        "Dynamics and Control"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "id": "cable-interlacing",
+      "title": "Autonomous Aerial Grasping Through Cable Interlacing",
+      "subtitle": "Using cables to form a grasp",
+      "status": "Published research · IEEE Transactions on Robotics, 2026",
+      "brief": "This project investigates how multiple aerial robots arrange and interlace cables around an object to establish an attachment for lifting and transportation. It connects cable routing, contact and friction mechanics, and team coordination. Cable-based grasp formation offers a way to explore securement without relying on a conventional rigid gripper.",
+      "extended": "A cable can connect aerial robots to an object while also acting as the mechanism that establishes a grasp. This project investigates how a team of UAVs can route and interlace cables around an object, form a hitch, and transition toward lifting and transportation. The task links geometry with mechanics: a feasible cable path does not by itself establish that an attachment will sustain the required load.\n\nThe research concept brings together coordinated robot motion, cable–cable and cable–object contact, friction, and grasp formation. A useful approach must account for how cable routing changes during the maneuver and how the resulting interaction constrains the robots. Modeling and planning therefore need to inform each other, with physical tests used to assess the assumptions behind securement.\n\nThe intended contribution is an integrated understanding of autonomous cable-based attachment and cooperative aerial handling. The associated paper, “From Hitch to Lift,” appears in IEEE Transactions on Robotics; its bibliographic record and cable-interlacing footage were supplied by the author. Specific performance claims are reserved for evidence from the full paper. Historical experiments will retain their original institutional attribution.",
+      "challenge": "Form an attachment that is both geometrically achievable and mechanically adequate while coordinating multiple flying robots.",
+      "approach": "Connect cable-routing plans, contact models, and coordinated control; compare the predicted attachment behavior with physical trials.",
+      "contributions": "Intended contributions: interaction-aware grasp formation and an integrated attachment-to-transport workflow. Demonstrated outcomes require source verification.",
+      "themes": [
+        "cables",
+        "interaction",
+        "cooperation",
+        "dynamics"
+      ],
+      "photo": "Wide shot of the full UAV–cable–object system and a close-up of the interlaced attachment.",
+      "video": "An author-approved, continuous sequence of approach, hitch formation, lift, and release; identify the original experiment location.",
+      "animation": "A top-down cable-routing schematic followed by a contact cross-section; label it as explanatory, not measured.",
+      "related": "From Hitch to Lift: Autonomous Cable Interlacing by Multi-UAV Teams for Aerial Grasping and Transportation — Diego S. D’Antonio, Tongshu Wu, Subhrajit Bhattacharya, and David Saldaña. IEEE Transactions on Robotics, 2026, pp. 1–16. DOI: 10.1109/TRO.2026.3677011. Bibliographic record supplied by the author.",
+      "institutions": "No institutions displayed until project-specific affiliations are confirmed.",
+      "funding": "No funding acknowledgment supplied or verified."
+    },
+    {
+      "id": "sliding-transport",
+      "title": "Cooperative Aerial Transportation with Sliding Cable Attachments",
+      "subtitle": "Coordinating a load as cable geometry changes",
+      "status": "Preprint · experiments reported",
+      "brief": "This project studies cooperative payload transportation when a cable can slide through an attachment on the load. Changing cable distribution couples robot motion, payload dynamics, and interaction forces. An author-posted preprint reports a dual-quadrotor system, geometry-based reference generation, and experimental demonstrations of the approach.",
+      "extended": "A moving cable attachment introduces another variable into cooperative aerial transportation: the cable’s distribution between the robots changes as the system moves. This project studies how that changing geometry affects the relationship between vehicle motion and payload motion. The scientific question is how a team can maintain a useful transportation configuration while respecting cable constraints and available actuation.\n\nThe author-posted preprint describes a single cable passing through a payload-mounted hook and reports physical experiments. Its models and reference-generation approach provide a starting point for examining mechanically coupled transport. The broader research direction asks how planning and feedback can use the changing geometry rather than assume that every attachment remains fixed.\n\nFor the website, the experiment should be explained through synchronized views of robot motion, cable distribution, and payload behavior. A schematic can introduce the mechanism before a real video shows its operation. Performance values, equipment details, and claims about robustness should be added only with the authors’ selected evidence. The current entry is labeled as a preprint and does not imply conference acceptance or journal publication.",
+      "challenge": "Account for changing cable distribution while coordinating payload motion and satisfying physical constraints.",
+      "approach": "Use coupled geometry and dynamics to generate feasible robot references; examine their behavior in physical transport experiments.",
+      "contributions": "The preprint reports a dual-quadrotor sliding-hook system and experimental evaluation. No numerical performance or broader reliability claim is added.",
+      "themes": [
+        "cables",
+        "cooperation",
+        "dynamics",
+        "interaction"
+      ],
+      "photo": "Full-system view with both robots, the cable, and the payload-mounted hook visible.",
+      "video": "Continuous transport sequence with a synchronized schematic showing cable redistribution.",
+      "animation": "A labeled geometric diagram showing cable distribution as the vehicles move.",
+      "related": "Cooperative Aerial Transportation of a Payload with a Sliding Cable Attachment — Sebastian Tilaguy Lezama and Diego S. D’Antonio, arXiv:2610.13665, 2026. https://arxiv.org/abs/2610.13665",
+      "institutions": "Oakland University, as identified in the author-posted manuscript.",
+      "funding": "The manuscript acknowledges NASA award 80NSSC25M7087 through the Michigan Space Grant Consortium. Confirm the exact website wording before using award logos."
+    },
+    {
+      "id": "blimp-capture",
+      "title": "Cooperative Blimp Swarms for Space-Debris Capture Emulation",
+      "subtitle": "Studying selected capture interactions in a terrestrial testbed",
+      "status": "Research direction · project stage to confirm",
+      "brief": "This project explores lightweight robotic blimps as platforms for studying selected aspects of cooperative capture and transportation. The research concept involves coordinated motion, interaction with moving objects, and cable-mediated handling. Blimp experiments can support controlled studies of these interactions; they do not reproduce true orbital microgravity dynamics.",
+      "extended": "Cooperative capture involves more than approaching an object. Robots must coordinate their relative motion, establish a useful interaction, and manage the consequences of contact. This research direction explores robotic blimps as terrestrial platforms for examining selected aspects of those tasks, including interaction with moving or tumbling objects and cable-mediated transportation.\n\nLightweight aerial platforms offer a setting in which sensing, coordination, and attachment strategies can be investigated together. A study could compare planned relative motion with observed contact behavior, examine how a team distributes roles, and test how capture geometry changes during a maneuver. These are proposed experimental questions; the website should report the testbed configuration and completed milestones only after confirmation.\n\nThe emulation scope must remain explicit. Buoyancy, aerodynamic drag, gravity, and actuation constraints shape blimp motion differently from orbital systems. The value of the platform lies in examining selected cooperative behaviors and interactions, with those differences stated alongside each demonstration. Michigan Space Grant Consortium support is identified in the supplied brief, but the project-specific award, period, acknowledgment, and current research stage remain to be confirmed.",
+      "challenge": "Coordinate contact with a moving object while defining which aspects of capture the terrestrial platform can meaningfully emulate.",
+      "approach": "Proposed approach: develop relative-motion models, cooperative control, and cable-based interactions; evaluate selected behaviors in a documented terrestrial testbed.",
+      "contributions": "Expected contributions: cooperative capture strategies and an experimental framework with explicit emulation limits. No completed capture result is claimed.",
+      "themes": [
+        "cables",
+        "cooperation",
+        "interaction",
+        "autonomy",
+        "dynamics"
+      ],
+      "photo": "Real blimps and target object in the test area; include scale and facility context once available.",
+      "video": "A selected capture maneuver with labels identifying robot roles and emulation limits.",
+      "animation": "Relative-motion and cable-interaction diagrams; avoid orbital footage presented as a blimp result.",
+      "related": "No project-specific publication verified.",
+      "institutions": "No collaborating institutions confirmed.",
+      "funding": "Michigan Space Grant Consortium support supplied by the user; project-specific award and acknowledgment pending confirmation."
+    },
+    {
+      "id": "cable-sensing",
+      "title": "Cable Interaction Sensing and Control",
+      "subtitle": "Observing the physical interaction state",
+      "status": "Research direction · project stage to confirm",
+      "brief": "Robot motion alone may not reveal whether a cable is taut, slipping, or contacting an object. This research direction develops sensing and modeling strategies for cable interaction, including tension, angle, and contact geometry. The goal is to connect reduced-order interaction estimates with feedback control and manipulation decisions.",
+      "extended": "A robot’s position does not necessarily reveal the condition of the cable it is manipulating. Similar vehicle configurations may correspond to different tensions, contact locations, or frictional states. This research direction asks which measurements and reduced-order variables can make those differences observable and useful for feedback.\n\nTopics include tension sensing, cable-angle measurement, contact geometry estimation, and transitions between interaction modes. A proposed workflow links sensor measurements to a compact description of the robot–cable–object system, then uses that description to inform control and planning. The scientific challenge is to preserve the variables that affect task behavior while avoiding a model that is too complex to estimate reliably.\n\nExperimental storytelling should connect an observable event to its measurement: a cable becomes taut, a contact begins to slide, or an attachment changes geometry. A synchronized video and sensor trace can explain why robot motion alone is insufficient. Specific sensors, estimation accuracy, control methods, and hardware implementations are not yet confirmed. The website therefore presents this work as a research direction and reserves result statements for documented experiments.",
+      "challenge": "Identify interaction variables that are observable from practical measurements and sufficient to support useful feedback.",
+      "approach": "Proposed approach: combine sensing, reduced-order models, and contact-state estimation, then examine closed-loop behavior in experiments.",
+      "contributions": "Expected contributions: interpretable interaction estimates and sensor-informed control. No sensing accuracy or validated hardware capability is claimed.",
+      "themes": [
+        "cables",
+        "dynamics",
+        "interaction",
+        "autonomy"
+      ],
+      "photo": "Close-up of an actual cable interface and sensor installation once confirmed.",
+      "video": "An experiment synchronized with measured tension and estimated contact states.",
+      "animation": "A clearly labeled schematic of slack, tension, and sliding transitions.",
+      "related": "No project-specific publication verified.",
+      "institutions": "No collaborating institutions confirmed.",
+      "funding": "No project-specific funding confirmed."
+    },
+    {
+      "id": "robot-search",
+      "title": "Autonomous Robotic Search and Manipulation",
+      "subtitle": "Using physical actions to reveal and retrieve objects",
+      "status": "Exploratory research direction",
+      "brief": "This exploratory direction combines active perception, scene understanding, and physical manipulation to search for and retrieve objects. A robot may need to move an obstacle before it can observe or grasp a target. We investigate how observations and actions can inform each other in a closed-loop autonomous process.",
+      "extended": "Object search becomes a manipulation problem when the target cannot be seen or reached directly. This exploratory direction considers robots that use observations to select actions and use actions to acquire new information. Pushing an obstacle may reveal a hidden object; changing a viewpoint may expose a grasp opportunity without altering the scene.\n\nThe research concept connects active visual perception, mapping, mechanical search, grasp planning, and closed-loop decision-making. A central challenge is choosing between gathering information and committing to physical action. Plans must account for what the robot knows, what an action may reveal, and whether the resulting contact or grasp is physically feasible.\n\nThis direction extends the laboratory’s focus on physical interaction beyond a particular aerial platform. It offers a way to connect perception and planning with the consequences of manipulation. No completed search system, benchmark result, or platform is asserted. Initial website media should use labeled conceptual diagrams until real experiments are available; subsequent project updates can document the chosen task, operating conditions, observed outcomes, and remaining limitations.",
+      "challenge": "Decide when to observe, rearrange the scene, or attempt retrieval under incomplete information.",
+      "approach": "Proposed approach: combine active perception, scene-state estimation, action selection, and grasp planning in a closed loop.",
+      "contributions": "Expected contributions: information-aware search and manipulation strategies. This is exploratory work with no completed accomplishment claimed.",
+      "themes": [
+        "autonomy",
+        "dynamics"
+      ],
+      "photo": "Actual workspace before and after an occluding object is moved, once experiments exist.",
+      "video": "Observe–push–observe–grasp sequence, with pauses explaining each decision.",
+      "animation": "A concept diagram showing how pushing changes visibility and available grasps.",
+      "related": "No project-specific publication verified.",
+      "institutions": "No collaborating institutions confirmed.",
+      "funding": "No project-specific funding confirmed."
+    }
+  ],
+  "publications": [
+    {
+      "id": "sliding-preprint",
+      "title": "Cooperative Aerial Transportation of a Payload with a Sliding Cable Attachment",
+      "authors": "Sebastian Tilaguy Lezama and Diego S. D’Antonio",
+      "venue": "arXiv preprint · arXiv:2610.13665",
+      "year": 2026,
+      "type": "Preprint",
+      "topics": [
+        "Cooperation",
+        "Dynamics",
+        "Cable manipulation and knotting",
+        "Physical interaction"
+      ],
+      "paper": "https://arxiv.org/html/2610.13665v1",
+      "doi": null,
+      "video": null,
+      "code": null,
+      "project": "sliding-transport",
+      "summary": "Studies cooperative payload transportation when a cable can slide through a payload-mounted hook. The author-posted preprint reports physical experiments.",
+      "bibtex": "@misc{tilaguylezama2026sliding,\n  title = {Cooperative Aerial Transportation of a Payload with a Sliding Cable Attachment},\n  author = {Tilaguy Lezama, Sebastian and D'Antonio, Diego S.},\n  year = {2026},\n  eprint = {2610.13665},\n  archivePrefix = {arXiv},\n  primaryClass = {cs.RO},\n  url = {https://arxiv.org/html/2610.13665v1}\n}",
+      "source": "https://arxiv.org/html/2610.13665v1",
+      "missing": [
+        "DOI registration",
+        "Video",
+        "Code repository"
+      ],
+      "image": "assets/img/sliding-cable-paper.png",
+      "image_alt": "Two quadrotors transporting a payload with a single cable sliding through a payload-mounted hook; annotated cable lengths and system geometry.",
+      "image_credit": "Figure 1 · Tilaguy Lezama and D’Antonio",
+      "image_license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "abstract": "Two quadrotors share a cable that slides through a hook on a suspended payload. The study models how cable redistribution couples vehicle motion and load dynamics, then develops geometrically feasible motion references subject to tension and actuation constraints. Physical experiments examine the resulting cooperative transportation approach."
+    },
+    {
+      "id": "spiningblimp",
+      "authors": "Leonardo Santens; Diego S. D’Antonio; Shuhang Hou; David Saldaña",
+      "title": "The Spinning Blimp: Design and Control of a Novel Minimalist Aerial Vehicle Leveraging Rotational Dynamics and Locomotion",
+      "year": 2025,
+      "type": "Conference paper",
+      "venue": "2025 IEEE International Conference on Robotics and Automation (ICRA)",
+      "pages": "6350–6356",
+      "doi": "10.1109/ICRA55743.2025.11128265",
+      "paper": "https://arxiv.org/html/2503.04112v1",
+      "image": "assets/img/spinning-blimp-paper.png",
+      "image_alt": "Red Spinning Blimp with wings and propellers flying inside a laboratory.",
+      "image_credit": "Figure 1 · Santens et al.",
+      "image_license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "image_license_label": "CC BY-NC-SA 4.0",
+      "topics": [
+        "Blimps",
+        "Dynamics"
+      ],
+      "summary": "Introduces a lighter-than-air vehicle that uses rotational motion and passive stabilization. The design combines buoyancy with a control strategy for translational motion and is evaluated through flight experiments.",
+      "bibtex": "@INPROCEEDINGS{spiningblimp,\n  author = {Santens, Leonardo and D'Antonio, Diego S. and Hou, Shuhang and Saldaña, David},\n  booktitle = {2025 IEEE International Conference on Robotics and Automation (ICRA)},\n  title = {The Spinning Blimp: Design and Control of a Novel Minimalist Aerial Vehicle Leveraging Rotational Dynamics and Locomotion},\n  year = {2025},\n  pages = {6350-6356},\n  doi = {10.1109/ICRA55743.2025.11128265}\n}",
+      "source": "https://arxiv.org/html/2503.04112v1",
+      "metadata_source": "Bibliographic record supplied by Diego S. D’Antonio",
+      "code": null,
+      "video": null,
+      "project": null,
+      "image_source": "https://arxiv.org/html/2503.04112v1",
+      "abstract": "Introduces a lighter-than-air vehicle that uses rotational motion and passive stabilization. The design combines buoyancy with a control strategy for translational motion and is evaluated through flight experiments."
+    },
+    {
+      "id": "blimpswarm",
+      "authors": "Jiawei Xu; Thong Vu; Diego S. D’Antonio; David Saldaña",
+      "title": "MochiSwarm: A Testbed for Robotic Micro-Blimps in Realistic Environments",
+      "year": 2025,
+      "type": "Conference paper",
+      "venue": "2025 IEEE International Conference on Robotics and Automation (ICRA)",
+      "pages": "584–590",
+      "doi": "10.1109/ICRA55743.2025.11127424",
+      "paper": "https://arxiv.org/html/2503.03077v1",
+      "video": "https://youtu.be/75gfIlPtrBU",
+      "image": "assets/img/mochiswarm-paper.png",
+      "image_alt": "Blue robotic micro-blimps performing pickup and delivery of red target balloons through yellow hoops in an industrial highbay.",
+      "image_credit": "Figure 1 · Xu et al.",
+      "image_license": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+      "image_license_label": "CC BY-NC-ND 4.0",
+      "topics": [
+        "Blimps",
+        "Cooperation",
+        "Perception and planning"
+      ],
+      "summary": "Presents a modular robotic blimp testbed integrating hardware, software, and onboard perception. Experiments examine autonomous pickup and delivery by multiple blimps without external localization infrastructure.",
+      "bibtex": "@INPROCEEDINGS{blimpswarm,\n  author = {Xu, Jiawei and Vu, Thong and D'Antonio, Diego S. and Saldaña, David},\n  booktitle = {2025 IEEE International Conference on Robotics and Automation (ICRA)},\n  title = {MochiSwarm: A Testbed for Robotic Micro-Blimps in Realistic Environments},\n  year = {2025},\n  pages = {584-590},\n  doi = {10.1109/ICRA55743.2025.11127424}\n}",
+      "source": "https://arxiv.org/html/2503.03077v1",
+      "metadata_source": "Bibliographic record supplied by Diego S. D’Antonio",
+      "code": null,
+      "project": null,
+      "image_source": "https://arxiv.org/html/2503.03077v1",
+      "abstract": "Presents a modular robotic blimp testbed integrating hardware, software, and onboard perception. Experiments examine autonomous pickup and delivery by multiple blimps without external localization infrastructure."
+    },
+    {
+      "id": "hitches2026",
+      "authors": "Diego S. D’Antonio; Tongshu Wu; Subhrajit Bhattacharya; David Saldaña",
+      "title": "From Hitch to Lift: Autonomous Cable Interlacing by Multi-UAV Teams for Aerial Grasping and Transportation",
+      "year": 2026,
+      "type": "Journal article",
+      "venue": "IEEE Transactions on Robotics",
+      "pages": "1–16",
+      "doi": "10.1109/TRO.2026.3677011",
+      "paper": "https://ieeexplore.ieee.org/document/11455389",
+      "project": "cable-interlacing",
+      "image": "assets/img/hitches.gif",
+      "image_alt": "Multiple aerial robots manipulating cables around a cylindrical payload in a laboratory experiment.",
+      "image_credit": "Cable-interlacing demonstration · supplied by the author",
+      "topics": [
+        "Cable manipulation and knotting",
+        "Cooperation",
+        "Physical interaction",
+        "Dynamics"
+      ],
+      "summary": "Investigates autonomous cable interlacing by UAV teams to establish grasps for object lifting and transportation. The research connects cable routing, contact and friction mechanics, and coordinated aerial manipulation.",
+      "bibtex": "@ARTICLE{hitches2026,\n  author = {D'Antonio, Diego S. and Wu, Tongshu and Bhattacharya, Subhrajit and Saldaña, David},\n  journal = {IEEE Transactions on Robotics},\n  title = {From Hitch to Lift: Autonomous Cable Interlacing by Multi-UAV Teams for Aerial Grasping and Transportation},\n  year = {2026},\n  pages = {1-16},\n  doi = {10.1109/TRO.2026.3677011}\n}",
+      "source": "https://ieeexplore.ieee.org/document/11455389",
+      "metadata_source": "Bibliographic record supplied by Diego S. D’Antonio",
+      "code": null,
+      "video": null,
+      "image_license": null,
+      "image_source": "https://ieeexplore.ieee.org/document/11455389",
+      "abstract": "Investigates autonomous cable interlacing by UAV teams to establish grasps for object lifting and transportation. The research connects cable routing, contact and friction mechanics, and coordinated aerial manipulation."
+    },
+    {
+      "id": "TyingKnotsintheAir",
+      "authors": "Tongshu Wu; Edward Lopez; Diego S. D’Antonio; David Saldaña",
+      "title": "Tying Knots in the Air: Reducing the Number of Quadrotors for Aerial Knot Formation",
+      "year": 2026,
+      "type": "Conference paper",
+      "venue": "2026 IEEE International Conference on Robotics and Automation (ICRA)",
+      "pages": "9871–9878",
+      "doi": "10.1109/ICRA57385.2026.11697504",
+      "paper": "https://doi.org/10.1109/ICRA57385.2026.11697504",
+      "video": "https://youtu.be/4qkVbkzWQlo",
+      "image": "assets/img/tying-knots-paper.jpg",
+      "image_alt": "Technical diagram from the author-shared knot-formation demonstration showing cable turning points and force directions.",
+      "image_credit": "Demonstration thumbnail · Wu et al.",
+      "image_source": "https://youtu.be/4qkVbkzWQlo",
+      "topics": [
+        "Cable manipulation and knotting",
+        "Cooperation",
+        "Dynamics"
+      ],
+      "summary": "Studies aerial knot formation with fewer quadrotors, linking coordinated robot motion with flexible-cable geometry. Citation details are supplied by the author; the linked demonstration illustrates the knot-formation research.",
+      "bibtex": "@INPROCEEDINGS{TyingKnotsintheAir,\n  author = {Wu, Tongshu and Lopez, Edward and D'Antonio, Diego S. and Saldaña, David},\n  booktitle = {2026 IEEE International Conference on Robotics and Automation (ICRA)},\n  title = {Tying Knots in the Air: Reducing the Number of Quadrotors for Aerial Knot Formation},\n  year = {2026},\n  pages = {9871-9878},\n  doi = {10.1109/ICRA57385.2026.11697504}\n}",
+      "source": "https://doi.org/10.1109/ICRA57385.2026.11697504",
+      "metadata_source": "Bibliographic record supplied by Diego S. D’Antonio",
+      "code": null,
+      "project": null,
+      "image_license": null,
+      "abstract": "Studies aerial knot formation with fewer quadrotors, linking coordinated robot motion with flexible-cable geometry. Citation details are supplied by the author; the linked demonstration illustrates the knot-formation research."
+    },
+    {
+      "id": "Customizable-ModQuad",
+      "title": "Customizable-ModQuad: a Versatile Hardware-Software Platform to Develop Lightweight and Low-cost Aerial Vehicles",
+      "authors": "Diego S. D’Antonio; Jiawei Xu; Gustavo A. Cardona; David Saldaña",
+      "venue": "arXiv",
+      "year": 2022,
+      "type": "Preprint",
+      "pages": null,
+      "volume": null,
+      "number": null,
+      "doi": null,
+      "paper": "https://www.researchgate.net/publication/368390821_Customizable-ModQuad_a_Versatile_Hardware-Software_Platform_to_Develop_Lightweight_and_Low-cost_Aerial_Vehicles",
+      "source": "https://www.researchgate.net/publication/368390821_Customizable-ModQuad_a_Versatile_Hardware-Software_Platform_to_Develop_Lightweight_and_Low-cost_Aerial_Vehicles",
+      "topics": [
+        "Modular aerial robots",
+        "Dynamics"
+      ],
+      "summary": "Presents a customizable hardware–software platform for lightweight aerial vehicles. Carbon-fiber components and printed connectors support changes to the frame, rotors, and electronics for different research configurations.",
+      "abstract": "Presents a customizable hardware–software platform for lightweight aerial vehicles. Carbon-fiber components and printed connectors support changes to the frame, rotors, and electronics for different research configurations.",
+      "image": "assets/img/customizable-modquad-paper.jpg",
+      "video": "https://youtu.be/OgBylpC3t38",
+      "code": null,
+      "project": null,
+      "image_license": null,
+      "metadata_source": "Bibliographic record supplied by Diego S. D’Antonio",
+      "image_source": "https://youtu.be/OgBylpC3t38",
+      "image_credit": "Assembly demonstration thumbnail · D’Antonio et al.",
+      "image_alt": "Research figure for Customizable-ModQuad: a Versatile Hardware-Software Platform to Develop Lightweight and Low-cost Aerial Vehicles",
+      "missing": [
+        "Official arXiv URL or identifier",
+        "DOI, if assigned"
+      ],
+      "bibtex": "@misc{Customizable-ModQuad,\n  author = {D'Antonio, Diego S. and Xu, Jiawei and Cardona, Gustavo A. and Saldaña, David},\n  title = {Customizable-ModQuad: a Versatile Hardware-Software Platform to Develop Lightweight and Low-cost Aerial Vehicles},\n  publisher = {arXiv},\n  year = {2022},\n  copyright = {Creative Commons Attribution Non Commercial Share Alike 4.0 International}\n}"
+    },
+    {
+      "id": "li2023novel",
+      "title": "A Novel Low-Cost, Recyclable, Easy-to-Build Robot Blimp For Transporting Supplies in Hard-to-Reach Locations",
+      "authors": "Karen Li; Shuhang Hou; Matyas Negash; Jiawei Xu; Edward Jeffs; Diego S. D’Antonio; David Saldaña",
+      "venue": "2023 IEEE Global Humanitarian Technology Conference (GHTC)",
+      "year": 2023,
+      "type": "Conference paper",
+      "pages": "36–42",
+      "volume": null,
+      "number": null,
+      "doi": "10.1109/GHTC56179.2023.10355047",
+      "paper": "https://arxiv.org/abs/2309.06682",
+      "source": "https://arxiv.org/abs/2309.06682",
+      "topics": [
+        "Blimps",
+        "Physical interaction"
+      ],
+      "summary": "Explores an inexpensive, easy-to-build robotic blimp for transporting supplies where road access is limited. The paper frames aerial delivery around humanitarian transportation needs and practical construction constraints.",
+      "abstract": "Explores an inexpensive, easy-to-build robotic blimp for transporting supplies where road access is limited. The paper frames aerial delivery around humanitarian transportation needs and practical construction constraints.",
+      "image": "assets/img/lowcost-blimp-paper.jpg",
+      "video": null,
+      "code": null,
+      "project": null,
+      "image_license": null,
+      "metadata_source": "Bibliographic record supplied by Diego S. D’Antonio",
+      "image_source": "https://arxiv.org/abs/2309.06682",
+      "image_credit": "Figure 1 · author-posted manuscript",
+      "image_alt": "Research figure for A Novel Low-Cost, Recyclable, Easy-to-Build Robot Blimp For Transporting Supplies in Hard-to-Reach Locations",
+      "bibtex": "@INPROCEEDINGS{li2023novel,\n  author = {Li, Karen and Hou, Shuhang and Negash, Matyas and Xu, Jiawei and Jeffs, Edward and D'Antonio, Diego S. and Saldaña, David},\n  booktitle = {2023 IEEE Global Humanitarian Technology Conference (GHTC)},\n  title = {A Novel Low-Cost, Recyclable, Easy-to-Build Robot Blimp For Transporting Supplies in Hard-to-Reach Locations},\n  year = {2023},\n  pages = {36-42},\n  doi = {10.1109/GHTC56179.2023.10355047}\n}"
+    },
+    {
+      "id": "Modular2",
+      "title": "Modular Multirotors: From Quadrotors to Fully-Actuated Aerial Vehicles",
+      "authors": "Jiawei Xu; Diego S. D’Antonio; David Saldaña",
+      "venue": "IEEE Transactions on Automation Science and Engineering",
+      "year": 2025,
+      "type": "Journal article",
+      "pages": "19328–19339",
+      "volume": "22",
+      "number": null,
+      "doi": "10.1109/TASE.2025.3594579",
+      "paper": "https://arxiv.org/abs/2202.00788",
+      "source": "https://arxiv.org/abs/2202.00788",
+      "topics": [
+        "Modular aerial robots",
+        "Dynamics"
+      ],
+      "summary": "Studies modular aerial vehicles whose configurations change their payload capacity and actuation capabilities. Dynamics, control, and capability models connect vehicle configurations to task requirements.",
+      "abstract": "Studies modular aerial vehicles whose configurations change their payload capacity and actuation capabilities. Dynamics, control, and capability models connect vehicle configurations to task requirements.",
+      "image": "assets/img/modular-multirotors-paper.png",
+      "video": "https://youtu.be/Mx0oQpxU-9A",
+      "code": null,
+      "project": null,
+      "image_license": null,
+      "metadata_source": "Bibliographic record supplied by Diego S. D’Antonio",
+      "image_source": "https://arxiv.org/abs/2202.00788",
+      "image_credit": "Figure 1 · author-posted manuscript",
+      "image_alt": "Research figure for Modular Multirotors: From Quadrotors to Fully-Actuated Aerial Vehicles",
+      "bibtex": "@ARTICLE{Modular2,\n  author = {Xu, Jiawei and D'Antonio, Diego S. and Saldaña, David},\n  journal = {IEEE Transactions on Automation Science and Engineering},\n  title = {Modular Multirotors: From Quadrotors to Fully-Actuated Aerial Vehicles},\n  year = {2025},\n  volume = {22},\n  pages = {19328-19339},\n  doi = {10.1109/TASE.2025.3594579}\n}"
+    },
+    {
+      "id": "9981363",
+      "title": "Folding Knots Using a Team of Aerial Robots",
+      "authors": "Diego S. D’Antonio; David Saldaña",
+      "venue": "2022 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)",
+      "year": 2022,
+      "type": "Conference paper",
+      "pages": "3372–3377",
+      "volume": null,
+      "number": null,
+      "doi": "10.1109/IROS47612.2022.9981363",
+      "paper": "https://arxiv.org/abs/2208.01482",
+      "source": "https://arxiv.org/abs/2208.01482",
+      "topics": [
+        "Cable manipulation and knotting",
+        "Cooperation",
+        "Dynamics"
+      ],
+      "summary": "Develops a representation and coordinated motion strategy for folding knots in midair with aerial robot teams. Catenary curves describe cable geometry, and simulations examine different knot formations.",
+      "abstract": "Develops a representation and coordinated motion strategy for folding knots in midair with aerial robot teams. Catenary curves describe cable geometry, and simulations examine different knot formations.",
+      "image": "assets/img/folding-knots-paper.png",
+      "video": null,
+      "code": null,
+      "project": null,
+      "image_license": null,
+      "metadata_source": "Bibliographic record supplied by Diego S. D’Antonio",
+      "image_source": "https://swarmslab.com/wp-content/uploads/2023/05/catenary_background_knots-640x360.png",
+      "image_credit": "Paper thumbnail · original Swarms Lab publication page",
+      "image_alt": "Research figure for Folding Knots Using a Team of Aerial Robots",
+      "bibtex": "@INPROCEEDINGS{9981363,\n  author = {D'Antonio, Diego S. and Saldaña, David},\n  booktitle = {2022 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},\n  title = {Folding Knots Using a Team of Aerial Robots},\n  year = {2022},\n  pages = {3372-3377},\n  doi = {10.1109/IROS47612.2022.9981363}\n}"
+    },
+    {
+      "id": "Hitches",
+      "title": "Forming and Controlling Hitches in Midair Using Aerial Robots",
+      "authors": "Diego S. D’Antonio; Subhrajit Bhattacharya; David Saldaña",
+      "venue": "2023 IEEE International Conference on Robotics and Automation (ICRA)",
+      "year": 2023,
+      "type": "Conference paper",
+      "pages": "1270–1276",
+      "volume": null,
+      "number": null,
+      "doi": "10.1109/ICRA48891.2023.10160741",
+      "paper": "https://arxiv.org/abs/2303.07427",
+      "source": "https://arxiv.org/abs/2303.07427",
+      "topics": [
+        "Cable manipulation and knotting",
+        "Cooperation",
+        "Physical interaction"
+      ],
+      "summary": "Studies how aerial robot teams form and reshape cable hitches to secure objects. A polygonal representation supports systematic formation and shape changes, examined through simulation and physical experiments.",
+      "abstract": "Studies how aerial robot teams form and reshape cable hitches to secure objects. A polygonal representation supports systematic formation and shape changes, examined through simulation and physical experiments.",
+      "image": "assets/img/forming-hitches-paper.jpg",
+      "video": null,
+      "code": null,
+      "project": null,
+      "image_license": null,
+      "metadata_source": "Bibliographic record supplied by Diego S. D’Antonio",
+      "image_source": "https://swarmslab.com/wp-content/uploads/2023/05/snapshot4-640x479.jpg",
+      "image_credit": "Paper thumbnail · original Swarms Lab publication page",
+      "image_alt": "Research figure for Forming and Controlling Hitches in Midair Using Aerial Robots",
+      "bibtex": "@INPROCEEDINGS{Hitches,\n  author = {D'Antonio, Diego S. and Bhattacharya, Subhrajit and Saldaña, David},\n  booktitle = {2023 IEEE International Conference on Robotics and Automation (ICRA)},\n  title = {Forming and Controlling Hitches in Midair Using Aerial Robots},\n  year = {2023},\n  pages = {1270-1276},\n  doi = {10.1109/ICRA48891.2023.10160741}\n}"
+    },
+    {
+      "id": "9349130",
+      "title": "Resilient Task Allocation in Heterogeneous Multi-Robot Systems",
+      "authors": "Siddharth Mayya; Diego S. D’Antonio; David Saldaña; Vijay Kumar",
+      "venue": "IEEE Robotics and Automation Letters",
+      "year": 2021,
+      "type": "Journal article",
+      "pages": "1327–1334",
+      "volume": "6",
+      "number": "2",
+      "doi": "10.1109/LRA.2021.3057559",
+      "paper": "https://arxiv.org/abs/2009.04593",
+      "source": "https://arxiv.org/abs/2009.04593",
+      "topics": [
+        "Task allocation",
+        "Cooperation",
+        "Perception and planning"
+      ],
+      "summary": "Investigates task assignment for robot teams with different capabilities under disruptions. Performance feedback informs optimization-based reassignment and resource allocation; simulation studies examine resilience in coverage and tracking tasks.",
+      "abstract": "Investigates task assignment for robot teams with different capabilities under disruptions. Performance feedback informs optimization-based reassignment and resource allocation; simulation studies examine resilience in coverage and tracking tasks.",
+      "image": "assets/img/resilient-allocation-paper.png",
+      "video": null,
+      "code": null,
+      "project": null,
+      "image_license": null,
+      "metadata_source": "Bibliographic record supplied by Diego S. D’Antonio",
+      "image_source": "https://swarmslab.com/wp-content/uploads/2022/01/coppelia-screenshot-2.png",
+      "image_credit": "Paper thumbnail · original Swarms Lab publication page",
+      "image_alt": "Research figure for Resilient Task Allocation in Heterogeneous Multi-Robot Systems",
+      "bibtex": "@ARTICLE{9349130,\n  author = {Mayya, Siddharth and D'Antonio, Diego S. and Saldaña, David and Kumar, Vijay},\n  journal = {IEEE Robotics and Automation Letters},\n  title = {Resilient Task Allocation in Heterogeneous Multi-Robot Systems},\n  year = {2021},\n  volume = {6},\n  number = {2},\n  pages = {1327-1334},\n  doi = {10.1109/LRA.2021.3057559}\n}"
+    },
+    {
+      "id": "9364354",
+      "title": "The Catenary Robot: Design and Control of a Cable Propelled by Two Quadrotors",
+      "authors": "Diego S. D’Antonio; Gustavo A. Cardona; David Saldaña",
+      "venue": "IEEE Robotics and Automation Letters",
+      "year": 2021,
+      "type": "Journal article",
+      "pages": "3857–3863",
+      "volume": "6",
+      "number": "2",
+      "doi": "10.1109/LRA.2021.3062603",
+      "paper": "https://arxiv.org/abs/2102.12519",
+      "source": "https://arxiv.org/abs/2102.12519",
+      "topics": [
+        "Cable manipulation and knotting",
+        "Dynamics",
+        "Physical interaction"
+      ],
+      "summary": "Models and controls a hanging cable driven by two quadrotors. The system uses cable geometry to interact with hook-shaped objects, connecting aerial motion to manipulation without a conventional rigid gripper.",
+      "abstract": "Models and controls a hanging cable driven by two quadrotors. The system uses cable geometry to interact with hook-shaped objects, connecting aerial motion to manipulation without a conventional rigid gripper.",
+      "image": "assets/img/catenary-robot-paper.png",
+      "video": null,
+      "code": null,
+      "project": null,
+      "image_license": null,
+      "metadata_source": "Bibliographic record supplied by Diego S. D’Antonio",
+      "image_source": "https://swarmslab.com/wp-content/uploads/2022/01/catenary.png",
+      "image_credit": "Paper thumbnail · original Swarms Lab publication page",
+      "image_alt": "Research figure for The Catenary Robot: Design and Control of a Cable Propelled by Two Quadrotors",
+      "bibtex": "@ARTICLE{9364354,\n  author = {D'Antonio, Diego S. and Cardona, Gustavo A. and Saldaña, David},\n  journal = {IEEE Robotics and Automation Letters},\n  title = {The Catenary Robot: Design and Control of a Cable Propelled by Two Quadrotors},\n  year = {2021},\n  volume = {6},\n  number = {2},\n  pages = {3857-3863},\n  doi = {10.1109/LRA.2021.3062603}\n}"
+    },
+    {
+      "id": "9636820",
+      "title": "Non-Prehensile Manipulation of Cuboid Objects Using a Catenary Robot",
+      "authors": "Gustavo A. Cardona; Diego S. D’Antonio; Cristian-Ioan Vasile; David Saldaña",
+      "venue": "2021 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)",
+      "year": 2021,
+      "type": "Conference paper",
+      "pages": "5270–5275",
+      "volume": null,
+      "number": null,
+      "doi": "10.1109/IROS51168.2021.9636820",
+      "paper": "https://arxiv.org/abs/2108.01572",
+      "source": "https://arxiv.org/abs/2108.01572",
+      "topics": [
+        "Cable manipulation and knotting",
+        "Physical interaction",
+        "Dynamics"
+      ],
+      "summary": "Examines rolling and dragging cuboid objects with a cable driven by two quadrotors. The manipulation strategy uses surface interaction rather than a pre-fastened connection between the cable and object.",
+      "abstract": "Examines rolling and dragging cuboid objects with a cable driven by two quadrotors. The manipulation strategy uses surface interaction rather than a pre-fastened connection between the cable and object.",
+      "image": "assets/img/cuboid-manipulation-paper.jpg",
+      "video": null,
+      "code": null,
+      "project": null,
+      "image_license": null,
+      "metadata_source": "Bibliographic record supplied by Diego S. D’Antonio",
+      "image_source": "https://swarmslab.com/wp-content/uploads/2021/11/real_robot1.jpg",
+      "image_credit": "Paper thumbnail · original Swarms Lab publication page",
+      "image_alt": "Research figure for Non-Prehensile Manipulation of Cuboid Objects Using a Catenary Robot",
+      "bibtex": "@INPROCEEDINGS{9636820,\n  author = {Cardona, Gustavo A. and D'Antonio, Diego S. and Vasile, Cristian-Ioan and Saldaña, David},\n  booktitle = {2021 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},\n  title = {Non-Prehensile Manipulation of Cuboid Objects Using a Catenary Robot},\n  year = {2021},\n  pages = {5270-5275},\n  doi = {10.1109/IROS51168.2021.9636820}\n}"
+    },
+    {
+      "id": "blimp",
+      "title": "SBlimp: Design, Model, and Translational Motion Control for a Swing-Blimp",
+      "authors": "Jiawei Xu; Diego S. D’Antonio; Dominic J. Ammirato; David Saldaña",
+      "venue": "2023 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)",
+      "year": 2023,
+      "type": "Conference paper",
+      "pages": "6977–6982",
+      "volume": null,
+      "number": null,
+      "doi": "10.1109/IROS55552.2023.10341796",
+      "paper": "https://arxiv.org/abs/2308.00259",
+      "source": "https://arxiv.org/abs/2308.00259",
+      "topics": [
+        "Blimps",
+        "Dynamics"
+      ],
+      "summary": "Introduces a helium-supported aerial vehicle with tilted rotors and a translational controller that does not require a fixed heading. Modeling, simulation, and prototype experiments examine the resulting swinging motion and stability.",
+      "abstract": "Introduces a helium-supported aerial vehicle with tilted rotors and a translational controller that does not require a fixed heading. Modeling, simulation, and prototype experiments examine the resulting swinging motion and stability.",
+      "image": "assets/img/sblimp-paper.jpg",
+      "video": null,
+      "code": null,
+      "project": null,
+      "image_license": null,
+      "metadata_source": "Bibliographic record supplied by Diego S. D’Antonio",
+      "image_source": "https://swarmslab.com/wp-content/uploads/2023/11/blimp-640x360.jpg",
+      "image_credit": "Paper thumbnail · original Swarms Lab publication page",
+      "image_alt": "Research figure for SBlimp: Design, Model, and Translational Motion Control for a Swing-Blimp",
+      "bibtex": "@INPROCEEDINGS{blimp,\n  author = {Xu, Jiawei and D'Antonio, Diego S. and Ammirato, Dominic J. and Saldaña, David},\n  booktitle = {2023 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},\n  title = {SBlimp: Design, Model, and Translational Motion Control for a Swing-Blimp},\n  year = {2023},\n  pages = {6977-6982},\n  doi = {10.1109/IROS55552.2023.10341796}\n}"
+    },
+    {
+      "id": "9561016",
+      "title": "H-ModQuad: Modular Multi-Rotors with 4, 5, and 6 Controllable DOF",
+      "authors": "Jiawei Xu; Diego S. D’Antonio; David Saldaña",
+      "venue": "2021 IEEE International Conference on Robotics and Automation (ICRA)",
+      "year": 2021,
+      "type": "Conference paper",
+      "pages": "190–196",
+      "volume": null,
+      "number": null,
+      "doi": "10.1109/ICRA48506.2021.9561016",
+      "paper": "https://arxiv.org/abs/2106.04048",
+      "source": "https://arxiv.org/abs/2106.04048",
+      "topics": [
+        "Modular aerial robots",
+        "Dynamics"
+      ],
+      "summary": "Investigates heterogeneous modular multirotors with four, five, or six controllable degrees of freedom. Module geometry and tilted rotors determine actuation properties; control methods are evaluated with physical robotic structures.",
+      "abstract": "Investigates heterogeneous modular multirotors with four, five, or six controllable degrees of freedom. Module geometry and tilted rotors determine actuation properties; control methods are evaluated with physical robotic structures.",
+      "image": "assets/img/hmodquad-paper.png",
+      "video": null,
+      "code": null,
+      "project": null,
+      "image_license": null,
+      "metadata_source": "Bibliographic record supplied by Diego S. D’Antonio",
+      "image_source": "https://swarmslab.com/wp-content/uploads/2022/01/main.png",
+      "image_credit": "Paper thumbnail · original Swarms Lab publication page",
+      "image_alt": "Research figure for H-ModQuad: Modular Multi-Rotors with 4, 5, and 6 Controllable DOF",
+      "bibtex": "@INPROCEEDINGS{9561016,\n  author = {Xu, Jiawei and D'Antonio, Diego S. and Saldaña, David},\n  booktitle = {2021 IEEE International Conference on Robotics and Automation (ICRA)},\n  title = {H-ModQuad: Modular Multi-Rotors with 4, 5, and 6 Controllable DOF},\n  year = {2021},\n  pages = {190-196},\n  doi = {10.1109/ICRA48506.2021.9561016}\n}"
+    },
+    {
+      "id": "9571068",
+      "title": "Adaptive Control for Cooperative Aerial Transportation Using Catenary Robots",
+      "authors": "Gustavo A. Cardona; Diego S. D’Antonio; Rafael Fierro; David Saldaña",
+      "venue": "2021 Aerial Robotic Systems Physically Interacting with the Environment (AIRPHARO)",
+      "year": 2021,
+      "type": "Conference paper",
+      "pages": "1–8",
+      "volume": null,
+      "number": null,
+      "doi": "10.1109/AIRPHARO52252.2021.9571068",
+      "paper": "https://par.nsf.gov/servlets/purl/10350104",
+      "source": "https://par.nsf.gov/servlets/purl/10350104",
+      "topics": [
+        "Cable manipulation and knotting",
+        "Cooperation",
+        "Dynamics"
+      ],
+      "summary": "Studies adaptive control for cooperative transportation using catenary robots. The research connects coupled cable–object interactions with feedback methods for coordinated aerial handling.",
+      "abstract": "Studies adaptive control for cooperative transportation using catenary robots. The research connects coupled cable–object interactions with feedback methods for coordinated aerial handling.",
+      "image": "assets/img/adaptive-transport-paper.png",
+      "video": null,
+      "code": null,
+      "project": null,
+      "image_license": null,
+      "metadata_source": "Bibliographic record supplied by Diego S. D’Antonio",
+      "image_source": "https://swarmslab.com/wp-content/uploads/2022/01/problem.png",
+      "image_credit": "Paper thumbnail · original Swarms Lab publication page",
+      "image_alt": "Research figure for Adaptive Control for Cooperative Aerial Transportation Using Catenary Robots",
+      "bibtex": "@INPROCEEDINGS{9571068,\n  author = {Cardona, Gustavo A. and D'Antonio, Diego S. and Fierro, Rafael and Saldaña, David},\n  booktitle = {2021 Aerial Robotic Systems Physically Interacting with the Environment (AIRPHARO)},\n  title = {Adaptive Control for Cooperative Aerial Transportation Using Catenary Robots},\n  year = {2021},\n  pages = {1-8},\n  doi = {10.1109/AIRPHARO52252.2021.9571068}\n}"
+    }
+  ],
+  "news": [
+    {
+      "title": "Organizing the first IAR–LARC airship competition",
+      "label": "Competition · November 2–6, 2026",
+      "summary": "ΔMARS Lab is organizing the first International Airship Racing at LARC (IAR–LARC), hosted at New Granada Military University. Teams will design and race autonomous lighter-than-air robots, putting perception, control, and flight autonomy to the test.",
+      "url": "https://sites.google.com/oakland.edu/iar-larc/home",
+      "image": "assets/img/iar-competition.gif",
+      "image_alt": "A robotic airship flying through an indoor course with red balloon markers at Oakland University.",
+      "image_caption": "Autonomous airship demonstration at Oakland University.",
+      "image_width": 800,
+      "image_height": 402
+    },
+    {
+      "title": "NSF PI Meeting, IROS 2026, and WVU seminar",
+      "label": "Research visits · September 24–October 2, 2026",
+      "summary": "Dr. Diego S. D’Antonio attended the NSF PI Meeting, presented at IROS 2026 in Pittsburgh, and concluded the trip with a robotics seminar at West Virginia University.",
+      "image": "assets/img/iros-2026-visit.gif",
+      "image_alt": "Dr. Diego S. D’Antonio with colleagues at IROS 2026 in Pittsburgh.",
+      "image_caption": "Dr. D’Antonio at IROS 2026 in Pittsburgh.",
+      "image_width": 400,
+      "image_height": 400
+    }
+  ],
+  "positioning": "Cooperative Robotics, Physical Interaction, and Autonomous Manipulation",
+  "supporting_line": "Advancing autonomous robotics through cooperative coordination, physical interaction, and intelligent manipulation.",
+  "question": "How can autonomous multi-robot systems coordinate their actions and leverage contact dynamics and mechanical interactions with deformable linear objects—including cable tension, friction, and topological constraints—to enable complex manipulation capabilities beyond those achievable by individual robots?",
+  "featured_focus": {
+    "title": "Cable Manipulation and Robotic Knotting",
+    "subtitle": "Enabling robots to manipulate flexible structures and exploit their mechanical properties.",
+    "paragraphs": [
+      "We investigate how autonomous robots can manipulate cables, ropes, and other deformable linear objects to establish physical connections, secure objects, and perform complex manipulation tasks.",
+      "Our research explores autonomous hitch and knot formation, cable interlacing, tension regulation, contact mechanics, and friction-based grasping.",
+      "By combining mathematical modeling, planning, control, and experimental robotics, we seek to enable robots to exploit the mechanical properties of flexible materials for manipulation and cooperative transportation."
+    ],
+    "applications": [
+      "Aerial grasping",
+      "Object securement",
+      "Robotic assembly",
+      "Cooperative transportation",
+      "Manipulation in challenging environments"
+    ]
+  },
+  "members": [
+    {
+      "id": "sebastian-tilaguy-lezama",
+      "name": "Sebastian Tilaguy-Lezama",
+      "group": "PhD Students",
+      "position": "Ph.D. Student · Electrical Engineering · 1st year",
+      "research_focus": "Aerial Cable Interaction",
+      "image": "assets/img/sebastian.png",
+      "education": [
+        {
+          "degree": "Ph.D. in Electrical Engineering",
+          "year": "1st year",
+          "field": "Aerial Cable Interaction"
+        },
+        {
+          "degree": "M.Sc. in Control Engineering",
+          "year": "2021",
+          "field": "Precision agriculture with UGVs"
+        },
+        {
+          "degree": "Electronic Engineering",
+          "year": "2017",
+          "field": "Power electronics and control"
+        }
+      ]
+    },
+    {
+      "id": "zhengqi-sun",
+      "name": "Zhengqi Sun",
+      "group": "Master’s Students",
+      "position": "Master’s Student"
+    },
+    {
+      "id": "zaid-ababneh",
+      "name": "Zaid Ababneh",
+      "group": "Master’s Students",
+      "position": "Master’s Student"
+    },
+    {
+      "id": "jared-nathan-ekstrom",
+      "name": "Jared Nathan Ekstrom",
+      "group": "Undergraduate Researchers",
+      "position": "Electrical Engineering",
+      "thesis": "Toward Low-Cost Swarm LTA Vehicles: Development and Characterization of a Modular ESP32-Based Winch and Tension-Sensing System"
+    },
+    {
+      "id": "barnabas-kiss",
+      "name": "Barnabás Kiss",
+      "group": "Undergraduate Researchers",
+      "position": "Electrical Engineering",
+      "thesis": "UAV Thrust Bench Development for the Experimental Determination of Motor-Propeller Performance",
+      "award": "Thesis Award Distinction in Electrical Engineering"
+    }
+  ]
+}
