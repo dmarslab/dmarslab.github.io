@@ -785,6 +785,16 @@
       "image_caption": "A lab gathering to welcome the fall semester.",
       "image_width": 1448,
       "image_height": 1086
+    },
+    {
+      "title": "Congratulations to Barnabás Kiss",
+      "label": "Student achievement · April 28, 2026",
+      "summary": "Congratulations to undergraduate Electrical Engineering student Barnabás Kiss on receiving the Thesis Award Distinction in Electrical Engineering for his thesis, “UAV Thrust Bench Development for the Experimental Determination of Motor-Propeller Performance.”",
+      "image": "assets/img/barnabas-kiss-thesis-award.png",
+      "image_alt": "Oakland University certificate recognizing Barnabás Kiss with thesis distinction and a thesis award in Electrical Engineering, dated April 28, 2026.",
+      "image_caption": "Barnabás Kiss’s thesis award certificate.",
+      "image_width": 1086,
+      "image_height": 1086
     }
   ],
   "positioning": "Cooperative Robotics, Physical Interaction, and Autonomous Manipulation",
