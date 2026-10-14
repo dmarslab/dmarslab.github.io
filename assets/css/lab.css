@@ -37,4 +37,6 @@
 
 .news-card+.news-card{margin-top:20px;padding-top:20px;border-top:1px solid var(--line)}.news-card img{max-height:180px;object-fit:contain;object-position:left top}
 
+#publication-list.is-expanded{max-height: min(75vh, 900px);overflow-y:scroll;scrollbar-gutter:stable;scrollbar-width:auto;scrollbar-color:var(--gold-text) var(--wash);padding-right:16px;overscroll-behavior-y:contain}#publication-list.is-expanded::-webkit-scrollbar{width:12px}#publication-list.is-expanded::-webkit-scrollbar-track{background:var(--wash)}#publication-list.is-expanded::-webkit-scrollbar-thumb{background:var(--gold-text);border:3px solid var(--wash);border-radius:8px}
+
 .publication-thumbnail video{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:contain;background:var(--wash)}

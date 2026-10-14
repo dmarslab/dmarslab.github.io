@@ -31,6 +31,7 @@
   const records = Array.from(document.querySelectorAll('.publication'));
   const count = document.querySelector('#publication-count');
   const empty = document.querySelector('#publication-empty');
+  const list = document.querySelector('#publication-list');
   function filterPublications() {
     const [year, type, topic] = filters.map(filter => filter.value);
     let shown = 0;
@@ -39,20 +40,24 @@
         && (type === 'all' || record.dataset.type === type)
         && (topic === 'all' || record.dataset.topics.split('|').includes(topic));
       record.hidden = !matches;
-      if (matches) shown += 1;
+      if (!record.hidden) shown += 1;
     });
     count.textContent = shown + (shown === 1 ? ' publication shown' : ' publications shown');
     empty.hidden = shown > 0;
   }
-  filters.forEach(filter => filter.addEventListener('change', filterPublications));
+  function resetPublicationView() {
+    list.scrollTop = 0;
+    filterPublications();
+  }
+  filters.forEach(filter => filter.addEventListener('change', resetPublicationView));
   document.querySelector('#reset-filters').addEventListener('click', () => {
     filters.forEach(filter => { filter.value = 'all'; });
-    filterPublications();
+    resetPublicationView();
   });
   document.querySelectorAll('.publication-tag').forEach(button => {
     button.addEventListener('click', () => {
       filters[2].value = button.dataset.topic;
-      filterPublications();
+      resetPublicationView();
     });
   });
   filterPublications();
