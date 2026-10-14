@@ -30,4 +30,8 @@
 @media(max-width:950px){.student-profiles{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:640px){.student-profiles{grid-template-columns:1fr;gap:16px}.student-profiles .student-profile>div:first-child{max-width:none}}
 
+/* News announcements with a research photograph. */
+.news-card{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);gap:36px;align-items:center}.news-card figure{margin:0;min-width:0}.news-card img{display:block;width:100%;height:auto}.news-card figcaption{font-size:10px;line-height:1.6;color:var(--muted);margin-top:8px}.news-card figcaption a:hover{text-decoration:underline}.news-copy h3{font-size:28px;line-height:1.25;margin:10px 0 16px}.news-copy .eyebrow{margin:0}.news-copy>p:not(.eyebrow){margin-bottom:20px}
+@media(max-width:640px){.news-card{grid-template-columns:1fr;gap:22px}.news-copy h3{font-size:24px}}
+
 .publication-thumbnail video{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:contain;background:var(--wash)}
