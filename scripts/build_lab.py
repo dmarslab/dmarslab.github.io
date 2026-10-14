@@ -72,7 +72,7 @@ for group in member_groups:
         education=''.join(f'<li><strong>{e(entry["degree"])} · {e(entry["year"])}</strong><span>Field: {e(entry["field"])}</span></li>' for entry in member.get('education',[]))
         research_focus=member.get('research_focus',[])
         if isinstance(research_focus,str): research_focus=[research_focus]
-        details=('<h5 class="member-education-heading">Research focus</h5><ol class="member-research-focus">'+''.join('<li>'+e(topic)+'</li>' for topic in research_focus)+'</ol>' if research_focus else '')
+        details=('<p class="member-research-focus"><strong>Research focus:</strong> '+' · '.join(e(topic) for topic in research_focus)+'</p>' if research_focus else '')
         if education: details+=f'<h5 class="member-education-heading">Education</h5><ul class="member-education">{education}</ul>'
         if member.get('thesis'): details+=f'<p class="member-thesis"><strong>Thesis:</strong> {e(member["thesis"])}</p>'
         if member.get('award'): details+=f'<p class="member-award"><strong>Distinction:</strong> {e(member["award"])}</p>'
