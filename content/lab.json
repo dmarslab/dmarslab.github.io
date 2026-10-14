@@ -846,13 +846,17 @@
       "id": "zhengqi-sun",
       "name": "Zhengqi Sun",
       "group": "Master’s Students",
-      "position": "Master’s Student"
+      "position": "Master’s Student",
+      "image": "assets/img/zhengqi-sun.png",
+      "image_alt": "Robot avatar for Zhengqi Sun"
     },
     {
       "id": "zaid-ababneh",
       "name": "Zaid Ababneh",
       "group": "Master’s Students",
-      "position": "Master’s Student"
+      "position": "Master’s Student",
+      "image": "assets/img/zaid-ababneh.png",
+      "image_alt": "Robot avatar for Zaid Ababneh"
     },
     {
       "id": "jared-nathan-ekstrom",

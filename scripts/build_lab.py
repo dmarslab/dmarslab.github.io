@@ -68,7 +68,7 @@ for group in member_groups:
     if not members: continue
 
     for member in members:
-        portrait=(f'<div><img class="member-portrait" src="{e(member["image"])}" alt="{e(member["name"])}" loading="lazy"></div>' if member.get('image') else '')
+        portrait=(f'<div><img class="member-portrait" src="{e(member["image"])}" alt="{e(member.get("image_alt",member["name"]))}" loading="lazy"></div>' if member.get('image') else '')
         education=''.join(f'<li><strong>{e(entry["degree"])} · {e(entry["year"])}</strong><span>Field: {e(entry["field"])}</span></li>' for entry in member.get('education',[]))
         details=(f'<p><strong>Research focus:</strong> {e(member["research_focus"])}</p>' if member.get('research_focus') else '')
         if education: details+=f'<h5 class="member-education-heading">Education</h5><ul class="member-education">{education}</ul>'
