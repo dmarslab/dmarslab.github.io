@@ -20,7 +20,7 @@ This headline states three connected research objectives without confining the l
 
 **Distinguishing scientific questions:** How can a robot create a useful attachment? How do changing contacts alter the dynamics? What must a team coordinate besides motion? What measurements reveal an interaction state? Frame these as research questions, then connect individual contributions to verified papers and experiments.
 
-**Name:** Δ represents change, evolution, and dynamic transformation, as supplied. An [author-posted manuscript](https://arxiv.org/html/2610.13665v1) identifies the full lab name as “Distributed Multi-Agent Robotic Systems.” This is strong primary evidence; confirm the intended official wordmark and expansion before adding the full name to the public site. Preserve ΔMARS as one word.
+**Name:** The symbol Δ (delta) represents incremental advances in robotic autonomy, physical interaction, and coordination that enable the development of increasingly capable multi-agent robotic systems. An [author-posted manuscript](https://arxiv.org/html/2610.13665v1) identifies the full lab name as “Distributed Multi-Agent Robotic Systems.” This is strong primary evidence; confirm the intended official wordmark and expansion before adding the full name to the public site. Preserve ΔMARS as one word.
 
 Because the brief did not explicitly provide the official expansion, the following are suggestions requiring approval, not definitions: (1) Multi-Agent Robotic Systems; (2) Manipulation and Autonomous Robotic Systems; (3) Modeling and Autonomy for Robotic Systems. Prefer the existing manuscript wording if confirmed, rather than introducing a new expansion.
 
