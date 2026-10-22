@@ -42,3 +42,5 @@
 .publication-thumbnail video{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:contain;background:var(--wash)}
 
 .member-research-focus{margin:0 0 12px;font-size:14px;line-height:1.5}.member-research-focus strong{font-weight:700}
+
+.brand-wordmark{display:flex;align-items:center;gap:4px}.brand-logo{display:block;width:180px;height:45px;object-fit:cover;object-position:center}.brand-lab{font-size:17px;font-weight:700;letter-spacing:1px}.brand-wordmark+.brand-affiliation{margin-top:2px}
