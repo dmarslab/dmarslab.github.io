@@ -43,4 +43,7 @@
 
 .member-research-focus{margin:0 0 12px;font-size:14px;line-height:1.5}.member-research-focus strong{font-weight:700}
 
-.brand-wordmark{display:flex;align-items:center;gap:4px}.brand-logo{display:block;width:180px;height:45px;object-fit:cover;object-position:center}.brand-lab{font-size:17px;font-weight:700;letter-spacing:1px}.brand-wordmark+.brand-affiliation{margin-top:2px}
+.brand-wordmark{display:flex;align-items:center;gap:4px}.brand-logo{display:block;width:230px;height:58px;object-fit:cover;object-position:center}.brand-lab{font-size:26px;font-weight:700;letter-spacing:1px}.brand-wordmark+.brand-affiliation{margin-top:2px}
+
+@media(min-width:951px) and (max-width:1150px){.header-inner{gap:16px}nav{gap:12px}}
+@media(max-width:400px){.brand-logo{width:200px;height:50px}.brand-lab{font-size:24px}}
